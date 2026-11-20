@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cs" data-home="/zsnovebranice/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Úprava stránky – Správa webu</title>
+<link rel="icon" href="/zsnovebranice/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/zsnovebranice/assets/js/prefs.js"></script>
+<link rel="stylesheet" href="/zsnovebranice/assets/css/site.css">
+<link rel="stylesheet" href="/zsnovebranice/assets/css/admin.css">
+<script src="/zsnovebranice/assets/js/admin.js" defer></script>
+</head>
+<body class="admin">
+<a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+<div class="demo-bar" role="region" aria-label="Ukázkový režim">
+  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše zkusit bez hesla. Změny vidíte jen vy a na skutečný web se nic neuloží.</p>
+</div>
+<header class="admin-bar">
+  <div class="wrap admin-bar-inner">
+    <p class="admin-title"><strong>Správa webu</strong> · Jubilejní ZŠ a MŠ Nové Bránice</p>
+    <nav aria-label="Správa webu">
+      <ul class="admin-nav">
+        <li><a href="/zsnovebranice/">Zobrazit web</a></li>
+                  <li><a href="/zsnovebranice/admin/">Přehled</a></li>
+          <li><a href="/zsnovebranice/admin/news/">Aktuality</a></li>
+          <li><a href="/zsnovebranice/admin/pages/">Stránky</a></li>
+          <li><a href="/zsnovebranice/admin/docs/">Dokumenty</a></li>
+          <li><a href="/zsnovebranice/admin/settings/">Nastavení</a></li>
+          <li>
+                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><button class="linklike" type="submit">Ukončit ukázku</button></form>
+                      </li>
+              </ul>
+    </nav>
+  </div>
+</header>
+<main id="obsah" tabindex="-1">
+  <div class="wrap narrow">
+    <h1>Úprava stránky: Povinně zveřejňované informace</h1>
+    <form method="post" action="#" data-a="page-save" class="form">
+      <input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><input type="hidden" name="slug" value="povinne-informace">
+      <div class="field"><label for="title">Nadpis stránky <span class="req">(povinné)</span></label><input id="title" name="title" type="text" value="Povinně zveřejňované informace" required></div>      <div class="field">
+  <label for="body">Text stránky <span class="req">(povinné)</span></label>
+  <p class="hint" id="body-hint">Tabulku vytvoříte řádky se svislou čárou: | Sloupec A | Sloupec B | (první řádek je záhlaví, druhý řádek |---|---| ). Ostatní formátování zajistí tlačítka níže.</p>
+  <div class="toolbar" role="toolbar" aria-label="Formátování textu" aria-controls="body">
+    <button type="button" class="btn btn-secondary btn-small" data-md="bold"><strong>Tučně</strong></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="italic"><em>Kurzíva</em></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="h2">Nadpis</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ul">Odrážky</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ol">Číslovaný seznam</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="link">Odkaz</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="note">Zvýrazněný blok</button>
+  </div>
+  <textarea id="body" name="body" rows="14" required aria-describedby="body-hint">Informace zveřejňované podle § 5 zákona č. 106/1999 Sb., o svobodném přístupu k informacím.
+
+## 1. Název
+Jubilejní základní škola Masarykova a mateřská škola, Nové Bránice, příspěvková organizace
+
+## 2. Důvod a způsob založení
+Příspěvková organizace zřízená obcí Nové Bránice jako zřizovatelem. Právní forma: příspěvková organizace. Škola vykonává činnost základní školy, mateřské školy, školní družiny a školní jídelny podle zákona č. 561/2004 Sb., školského zákona.
+
+## 3. Organizační struktura
+Ředitelka školy: Bc. Pavla Schořová. Škola se skládá ze základní školy, mateřské školy, školní družiny a školní jídelny. Organizační řád najdete v sekci [Dokumenty školy](/dokumenty).
+
+## 4. Kontaktní spojení, adresa a úřední hodiny
+Nové Bránice 131, 664 64 Dolní Kounice. Podatelna je otevřena v pracovní dny 6:30–15:00 (viz [Podatelna](/podatelna)).
+
+## 5. Telefon, e-mail, datová schránka
+Telefon [546 421 646](tel:+420546421646), e-mail podatelny [info@zsnovebranice.cz](mailto:info@zsnovebranice.cz), datová schránka vcykkus.
+
+## 6. Čísla bankovních účtů
+27-9396310267/0100 u KB Ivančice (družina, ostatní platby); 131-4432480237/0100 (zálohy na stravné).
+
+## 7. IČO
+49458795
+
+## 8. Dokumenty
+Školní řád, organizační řád, klasifikační řád, školní vzdělávací programy a další dokumenty jsou ke stažení v sekci [Dokumenty školy](/dokumenty).
+
+## 9. Žádosti o informace a stížnosti
+Žádosti o informace podle zákona č. 106/1999 Sb. a stížnosti na vyřízení žádosti lze podat v podatelně školy, e-mailem, datovou schránkou nebo telefonicky (viz [Podatelna](/podatelna)). Informace poskytuje ředitelka školy.
+
+## 10. Sazebník úhrad
+Úplata za školní družinu: 150 Kč měsíčně. Stravné (doporučené měsíční zálohy): MŠ 1 144 / 1 232 Kč, ZŠ 770 / 814 Kč (viz [Školní jídelna](/skolni-jidelna)). Úhrady za poskytování informací se řídí sazebníkem, který škola vydá a zveřejní zde.
+
+## 11. Výroční zprávy
+Výroční zprávy o činnosti školy a o poskytování informací jsou zveřejněny v sekci [Dokumenty školy](/dokumenty).</textarea>
+  <p><button type="button" class="btn btn-secondary btn-small" data-preview="body" data-preview-url="/admin/?a=preview" data-csrf="829e2d016375baae38c88233daed458d19142aea08aede81">Zobrazit náhled</button></p>
+  <div class="preview prose" id="body-preview" aria-live="polite" hidden></div>
+</div>
+      <p class="form-actions"><button class="btn btn-primary btn-big" type="submit">Uložit stránku</button> <a class="btn btn-secondary" href="/zsnovebranice/povinne-informace">Zobrazit na webu</a> <a class="btn btn-secondary" href="/zsnovebranice/admin/pages/">Zrušit</a></p>
+    </form>
+  </div>
+</main>
+<script src="/zsnovebranice/zsnovebranice/assets/js/static-demo.js" defer></script>
+</body></html>

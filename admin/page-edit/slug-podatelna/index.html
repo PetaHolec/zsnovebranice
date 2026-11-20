@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs" data-home="/zsnovebranice/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Úprava stránky – Správa webu</title>
+<link rel="icon" href="/zsnovebranice/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/zsnovebranice/assets/js/prefs.js"></script>
+<link rel="stylesheet" href="/zsnovebranice/assets/css/site.css">
+<link rel="stylesheet" href="/zsnovebranice/assets/css/admin.css">
+<script src="/zsnovebranice/assets/js/admin.js" defer></script>
+</head>
+<body class="admin">
+<a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+<div class="demo-bar" role="region" aria-label="Ukázkový režim">
+  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše zkusit bez hesla. Změny vidíte jen vy a na skutečný web se nic neuloží.</p>
+</div>
+<header class="admin-bar">
+  <div class="wrap admin-bar-inner">
+    <p class="admin-title"><strong>Správa webu</strong> · Jubilejní ZŠ a MŠ Nové Bránice</p>
+    <nav aria-label="Správa webu">
+      <ul class="admin-nav">
+        <li><a href="/zsnovebranice/">Zobrazit web</a></li>
+                  <li><a href="/zsnovebranice/admin/">Přehled</a></li>
+          <li><a href="/zsnovebranice/admin/news/">Aktuality</a></li>
+          <li><a href="/zsnovebranice/admin/pages/">Stránky</a></li>
+          <li><a href="/zsnovebranice/admin/docs/">Dokumenty</a></li>
+          <li><a href="/zsnovebranice/admin/settings/">Nastavení</a></li>
+          <li>
+                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><button class="linklike" type="submit">Ukončit ukázku</button></form>
+                      </li>
+              </ul>
+    </nav>
+  </div>
+</header>
+<main id="obsah" tabindex="-1">
+  <div class="wrap narrow">
+    <h1>Úprava stránky: Podatelna</h1>
+    <form method="post" action="#" data-a="page-save" class="form">
+      <input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><input type="hidden" name="slug" value="podatelna">
+      <div class="field"><label for="title">Nadpis stránky <span class="req">(povinné)</span></label><input id="title" name="title" type="text" value="Podatelna" required></div>      <div class="field">
+  <label for="body">Text stránky <span class="req">(povinné)</span></label>
+  <p class="hint" id="body-hint">Tabulku vytvoříte řádky se svislou čárou: | Sloupec A | Sloupec B | (první řádek je záhlaví, druhý řádek |---|---| ). Ostatní formátování zajistí tlačítka níže.</p>
+  <div class="toolbar" role="toolbar" aria-label="Formátování textu" aria-controls="body">
+    <button type="button" class="btn btn-secondary btn-small" data-md="bold"><strong>Tučně</strong></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="italic"><em>Kurzíva</em></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="h2">Nadpis</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ul">Odrážky</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ol">Číslovaný seznam</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="link">Odkaz</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="note">Zvýrazněný blok</button>
+  </div>
+  <textarea id="body" name="body" rows="14" required aria-describedby="body-hint">&gt; **Osobní podání:** pondělí až pátek 6:30 – 15:00. **Elektronické podání:** e-mail [info@zsnovebranice.cz](mailto:info@zsnovebranice.cz) nebo datová schránka **vcykkus**.
+
+## Kontaktní údaje
+**Jubilejní základní škola Masarykova a mateřská škola, Nové Bránice, příspěvková organizace**
+- **Adresa:** Nové Bránice 131, 664 64 Dolní Kounice
+- **IČO:** 49458795
+- **E-mail podatelny:** [info@zsnovebranice.cz](mailto:info@zsnovebranice.cz)
+- **ID datové schránky:** vcykkus
+- **Telefon:** [+420 546 421 646](tel:+420546421646)
+
+## Osobní podání
+Podání v listinné podobě nebo na technickém nosiči dat lze osobně doručit do podatelny školy:
+
+| Den | Doba pro příjem podání |
+|---|---|
+| Pondělí | 6:30 – 15:00 |
+| Úterý | 6:30 – 15:00 |
+| Středa | 6:30 – 15:00 |
+| Čtvrtek | 6:30 – 15:00 |
+| Pátek | 6:30 – 15:00 |
+
+Mimo uvedenou dobu je možné osobní předání po předchozí telefonické domluvě na čísle [+420 546 421 646](tel:+420546421646).
+
+## Elektronické podání
+Elektronické podání lze škole doručit:
+- e-mailem na adresu [info@zsnovebranice.cz](mailto:info@zsnovebranice.cz),
+- prostřednictvím datové schránky školy **vcykkus**.
+
+Do předmětu zprávy doporučujeme uvést stručný důvod podání, případně jméno osoby, které je podání určeno. Pokud zasíláte více dokumentů, označte je tak, aby bylo zřejmé, který z nich je vlastním podáním a které jsou přílohami.
+
+## Podání ve správním řízení
+Podání podle zákona č. 500/2004 Sb., správní řád, lze učinit písemně, ústně do protokolu nebo elektronicky. Podání učiněné datovou schránkou není nutné opatřovat elektronickým podpisem. U podání zaslaného běžným e-mailem bez uznávaného elektronického podpisu může být v případech stanovených správním řádem nutné podání do 5 dnů potvrdit nebo doplnit. Pro podání, u kterých je důležité prokázat totožnost odesílatele a řádné doručení, proto doporučujeme datovou schránku.
+
+## Přílohy elektronického podání
+Dokumenty zasílejte v běžně používaných formátech: PDF, DOC/DOCX, XLS/XLSX, JPG, PNG. Soubory nesmí obsahovat škodlivý kód. Pokud škola dokument nebude schopna otevřít nebo bezpečně zpracovat, může odesílatele požádat o zaslání v jiném formátu.
+
+## Příjem elektronických podání
+Po přijetí podání může škola zkontrolovat čitelnost a úplnost, datový formát příloh, přítomnost elektronického podpisu (je-li vyžadován), přítomnost škodlivého kódu a možnost bezpečného otevření příloh. Zprávy vyhodnocené jako nevyžádaná pošta nebo obsahující škodlivý kód mohou být z bezpečnostních důvodů vyřazeny.</textarea>
+  <p><button type="button" class="btn btn-secondary btn-small" data-preview="body" data-preview-url="/admin/?a=preview" data-csrf="829e2d016375baae38c88233daed458d19142aea08aede81">Zobrazit náhled</button></p>
+  <div class="preview prose" id="body-preview" aria-live="polite" hidden></div>
+</div>
+      <p class="form-actions"><button class="btn btn-primary btn-big" type="submit">Uložit stránku</button> <a class="btn btn-secondary" href="/zsnovebranice/podatelna">Zobrazit na webu</a> <a class="btn btn-secondary" href="/zsnovebranice/admin/pages/">Zrušit</a></p>
+    </form>
+  </div>
+</main>
+<script src="/zsnovebranice/zsnovebranice/assets/js/static-demo.js" defer></script>
+</body></html>

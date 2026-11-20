@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs" data-home="/zsnovebranice/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Úprava aktuality – Správa webu</title>
+<link rel="icon" href="/zsnovebranice/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/zsnovebranice/assets/js/prefs.js"></script>
+<link rel="stylesheet" href="/zsnovebranice/assets/css/site.css">
+<link rel="stylesheet" href="/zsnovebranice/assets/css/admin.css">
+<script src="/zsnovebranice/assets/js/admin.js" defer></script>
+</head>
+<body class="admin">
+<a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+<div class="demo-bar" role="region" aria-label="Ukázkový režim">
+  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše zkusit bez hesla. Změny vidíte jen vy a na skutečný web se nic neuloží.</p>
+</div>
+<header class="admin-bar">
+  <div class="wrap admin-bar-inner">
+    <p class="admin-title"><strong>Správa webu</strong> · Jubilejní ZŠ a MŠ Nové Bránice</p>
+    <nav aria-label="Správa webu">
+      <ul class="admin-nav">
+        <li><a href="/zsnovebranice/">Zobrazit web</a></li>
+                  <li><a href="/zsnovebranice/admin/">Přehled</a></li>
+          <li><a href="/zsnovebranice/admin/news/">Aktuality</a></li>
+          <li><a href="/zsnovebranice/admin/pages/">Stránky</a></li>
+          <li><a href="/zsnovebranice/admin/docs/">Dokumenty</a></li>
+          <li><a href="/zsnovebranice/admin/settings/">Nastavení</a></li>
+          <li>
+                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><button class="linklike" type="submit">Ukončit ukázku</button></form>
+                      </li>
+              </ul>
+    </nav>
+  </div>
+</header>
+<main id="obsah" tabindex="-1">
+  <div class="wrap narrow">
+    <h1>Úprava aktuality</h1>
+    <form method="post" action="#" data-a="news-save" enctype="multipart/form-data" class="form">
+      <input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81">      <input type="hidden" name="id" value="n1">
+      <div class="field"><label for="title">Nadpis <span class="req">(povinné)</span></label><p class="hint" id="title-hint">Stručně a výstižně, např. „Ředitelské volno 16. listopadu“.</p><input id="title" name="title" type="text" value="Důležité: škola a MŠ zavřeny 16.–18. listopadu" required aria-describedby="title-hint"></div>      <div class="field"><label for="date">Datum zveřejnění <span class="req">(povinné)</span></label><input id="date" name="date" type="date" value="2026-11-12" required></div>      <div class="field">
+        <label for="category">Kategorie</label>
+        <select id="category" name="category">
+          <option>Škola</option><option>Základní škola</option><option>Mateřská škola</option><option>Školní družina</option><option>Školní jídelna</option><option selected>Pro rodiče</option>        </select>
+      </div>
+      <div class="field">
+  <label for="body">Text aktuality <span class="req">(povinné)</span></label>
+  <p class="hint" id="body-hint">Pište běžným textem. Prázdný řádek odděluje odstavce. Pomocí tlačítek níže doplníte tučné písmo, nadpis, seznam nebo odkaz.</p>
+  <div class="toolbar" role="toolbar" aria-label="Formátování textu" aria-controls="body">
+    <button type="button" class="btn btn-secondary btn-small" data-md="bold"><strong>Tučně</strong></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="italic"><em>Kurzíva</em></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="h2">Nadpis</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ul">Odrážky</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ol">Číslovaný seznam</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="link">Odkaz</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="note">Zvýrazněný blok</button>
+  </div>
+  <textarea id="body" name="body" rows="14" required aria-describedby="body-hint">Vážení rodiče, informujeme vás o uzavření školy i mateřské školy v následujících dnech:
+
+- **pondělí 16. 11. 2026** – ředitelské volno
+- **úterý 17. 11. 2026** – státní svátek
+- **středa 18. 11. 2026** – ředitelské volno z důvodu celodenní odstávky vody v celé obci
+
+Běžný provoz školy i mateřské školy bude obnoven **ve čtvrtek 19. 11. 2026**. Prosíme vás, abyste s touto skutečností počítali a včas si zajistili péči o své děti. Děkujeme za pochopení.
+
+Vedení školy a mateřské školy</textarea>
+  <p><button type="button" class="btn btn-secondary btn-small" data-preview="body" data-preview-url="/admin/?a=preview" data-csrf="829e2d016375baae38c88233daed458d19142aea08aede81">Zobrazit náhled</button></p>
+  <div class="preview prose" id="body-preview" aria-live="polite" hidden></div>
+</div>
+
+      <fieldset>
+        <legend>Důležité oznámení</legend>
+        <div class="check"><input type="checkbox" id="important" name="important" value="1" checked><label for="important">Zobrazit jako výrazný žlutý pruh na úvodní stránce (např. uzavření školy)</label></div>
+        <div class="field"><label for="until">Zobrazovat pruh do dne</label><p class="hint" id="until-hint">Po tomto dni pruh sám zmizí, aktualita zůstane. Nechte prázdné, pokud má být pruh vidět, dokud ho nevypnete.</p><input id="until" name="until" type="date" value="2026-11-18" aria-describedby="until-hint"></div>      </fieldset>
+
+      <fieldset>
+        <legend>Termín události (nepovinné)</legend>
+        <div class="field"><label for="event_date">Datum akce</label><p class="hint" id="event_date-hint">Pokud vyplníte, aktualita se objeví v seznamu „Nejbližší termíny“ na úvodní stránce.</p><input id="event_date" name="event_date" type="date" value="" aria-describedby="event_date-hint"></div>      </fieldset>
+
+      <fieldset>
+        <legend>Fotografie (nepovinné)</legend>
+                <div class="field"><label for="image">Nahrát fotografii</label><p class="hint" id="image-hint">Formáty JPG, PNG, WebP, do 6 MB.</p><input type="file" id="image" name="image" accept="image/jpeg,image/png,image/webp" aria-describedby="image-hint"></div>
+        <div class="field"><label for="image_alt">Popis fotografie</label><p class="hint" id="image_alt-hint">Napište jednou větou, co je na obrázku. Čte ho čtečka obrazovky nevidomým návštěvníkům. Např. „Děti z první třídy sázejí stromek na školní zahradě.“</p><input id="image_alt" name="image_alt" type="text" value="" aria-describedby="image_alt-hint"></div>      </fieldset>
+
+      <fieldset>
+        <legend>Přílohy ke stažení (nepovinné)</legend>
+                <div class="field"><label for="files">Přidat přílohy</label><p class="hint" id="files-hint">PDF, Word, Excel, obrázky; do 15 MB. Lze vybrat více souborů.</p><input type="file" id="files" name="files[]" multiple aria-describedby="files-hint"></div>
+      </fieldset>
+
+      <div class="check big"><input type="checkbox" id="published" name="published" value="1" checked><label for="published">Zveřejnit na webu (bez zaškrtnutí se uloží jen jako koncept)</label></div>
+      <p class="form-actions"><button class="btn btn-primary btn-big" type="submit">Uložit aktualitu</button> <a class="btn btn-secondary" href="/zsnovebranice/admin/news/">Zrušit</a></p>
+    </form>
+  </div>
+</main>
+<script src="/zsnovebranice/zsnovebranice/assets/js/static-demo.js" defer></script>
+</body></html>

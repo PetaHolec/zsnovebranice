@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs" data-home="/zsnovebranice/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Dokumenty – Správa webu</title>
+<link rel="icon" href="/zsnovebranice/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/zsnovebranice/assets/js/prefs.js"></script>
+<link rel="stylesheet" href="/zsnovebranice/assets/css/site.css">
+<link rel="stylesheet" href="/zsnovebranice/assets/css/admin.css">
+<script src="/zsnovebranice/assets/js/admin.js" defer></script>
+</head>
+<body class="admin">
+<a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+<div class="demo-bar" role="region" aria-label="Ukázkový režim">
+  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše zkusit bez hesla. Změny vidíte jen vy a na skutečný web se nic neuloží.</p>
+</div>
+<header class="admin-bar">
+  <div class="wrap admin-bar-inner">
+    <p class="admin-title"><strong>Správa webu</strong> · Jubilejní ZŠ a MŠ Nové Bránice</p>
+    <nav aria-label="Správa webu">
+      <ul class="admin-nav">
+        <li><a href="/zsnovebranice/">Zobrazit web</a></li>
+                  <li><a href="/zsnovebranice/admin/">Přehled</a></li>
+          <li><a href="/zsnovebranice/admin/news/">Aktuality</a></li>
+          <li><a href="/zsnovebranice/admin/pages/">Stránky</a></li>
+          <li><a href="/zsnovebranice/admin/docs/">Dokumenty</a></li>
+          <li><a href="/zsnovebranice/admin/settings/">Nastavení</a></li>
+          <li>
+                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><button class="linklike" type="submit">Ukončit ukázku</button></form>
+                      </li>
+              </ul>
+    </nav>
+  </div>
+</header>
+<main id="obsah" tabindex="-1">
+  <div class="wrap">
+    <h1>Dokumenty školy</h1>
+    <section aria-labelledby="h-add">
+      <h2 id="h-add">Nahrát nový dokument</h2>
+      <form method="post" action="#" data-a="doc-add" enctype="multipart/form-data" class="form">
+        <input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81">        <div class="field"><label for="title">Název dokumentu <span class="req">(povinné)</span></label><p class="hint" id="title-hint">Např. „Výroční zpráva o činnosti školy 2025/2026“.</p><input id="title" name="title" type="text" value="" required aria-describedby="title-hint"></div>        <div class="field"><label for="group">Skupina</label>
+          <select id="group" name="group"><option>Základní dokumenty školy</option><option>Výroční zprávy</option><option>Formuláře</option><option>Školská rada</option><option>GDPR</option><option>Ostatní</option></select></div>
+        <div class="field"><label for="file">Soubor <span class="req">(povinné)</span></label><p class="hint" id="file-hint">Nejlépe PDF (do 15 MB). Preferujte PDF vytvořené z textu, nikoli sken, aby je mohli číst i nevidomí.</p><input id="file" type="file" name="file" required aria-describedby="file-hint"></div>
+        <p><button class="btn btn-primary" type="submit">Nahrát dokument</button></p>
+      </form>
+    </section>
+    <section aria-labelledby="h-list">
+      <h2 id="h-list">Nahrané dokumenty</h2>
+              <div class="table-wrap" tabindex="0" role="region" aria-label="Seznam dokumentů (lze posouvat)"><table>
+          <caption class="vh">Seznam dokumentů</caption>
+          <thead><tr><th scope="col">Název</th><th scope="col">Skupina</th><th scope="col">Akce</th></tr></thead>
+          <tbody>            <tr><th scope="row">Klasifikační řád</th><td>Základní dokumenty školy</td>
+              <td class="actions"><a class="btn btn-secondary btn-small" href="/zsnovebranice/admin/doc-delete/id-d1/">Odstranit<span class="vh"> dokument Klasifikační řád</span></a></td></tr>
+                      <tr><th scope="row">Organizační řád</th><td>Základní dokumenty školy</td>
+              <td class="actions"><a class="btn btn-secondary btn-small" href="/zsnovebranice/admin/doc-delete/id-d2/">Odstranit<span class="vh"> dokument Organizační řád</span></a></td></tr>
+                      <tr><th scope="row">Školní řád</th><td>Základní dokumenty školy</td>
+              <td class="actions"><a class="btn btn-secondary btn-small" href="/zsnovebranice/admin/doc-delete/id-d3/">Odstranit<span class="vh"> dokument Školní řád</span></a></td></tr>
+                      <tr><th scope="row">Školní vzdělávací program pro MŠ</th><td>Základní dokumenty školy</td>
+              <td class="actions"><a class="btn btn-secondary btn-small" href="/zsnovebranice/admin/doc-delete/id-d4/">Odstranit<span class="vh"> dokument Školní vzdělávací program pro MŠ</span></a></td></tr>
+                      <tr><th scope="row">Školní vzdělávací program pro ZŠ</th><td>Základní dokumenty školy</td>
+              <td class="actions"><a class="btn btn-secondary btn-small" href="/zsnovebranice/admin/doc-delete/id-d5/">Odstranit<span class="vh"> dokument Školní vzdělávací program pro ZŠ</span></a></td></tr>
+                      <tr><th scope="row">Střednědobý výhled 2025-2026</th><td>Základní dokumenty školy</td>
+              <td class="actions"><a class="btn btn-secondary btn-small" href="/zsnovebranice/admin/doc-delete/id-d6/">Odstranit<span class="vh"> dokument Střednědobý výhled 2025-2026</span></a></td></tr>
+          </tbody></table></div>
+          </section>
+  </div>
+</main>
+<script src="/zsnovebranice/zsnovebranice/assets/js/static-demo.js" defer></script>
+</body></html>

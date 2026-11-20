@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="cs" data-home="/zsnovebranice/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Úprava stránky – Správa webu</title>
+<link rel="icon" href="/zsnovebranice/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/zsnovebranice/assets/js/prefs.js"></script>
+<link rel="stylesheet" href="/zsnovebranice/assets/css/site.css">
+<link rel="stylesheet" href="/zsnovebranice/assets/css/admin.css">
+<script src="/zsnovebranice/assets/js/admin.js" defer></script>
+</head>
+<body class="admin">
+<a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+<div class="demo-bar" role="region" aria-label="Ukázkový režim">
+  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše zkusit bez hesla. Změny vidíte jen vy a na skutečný web se nic neuloží.</p>
+</div>
+<header class="admin-bar">
+  <div class="wrap admin-bar-inner">
+    <p class="admin-title"><strong>Správa webu</strong> · Jubilejní ZŠ a MŠ Nové Bránice</p>
+    <nav aria-label="Správa webu">
+      <ul class="admin-nav">
+        <li><a href="/zsnovebranice/">Zobrazit web</a></li>
+                  <li><a href="/zsnovebranice/admin/">Přehled</a></li>
+          <li><a href="/zsnovebranice/admin/news/">Aktuality</a></li>
+          <li><a href="/zsnovebranice/admin/pages/">Stránky</a></li>
+          <li><a href="/zsnovebranice/admin/docs/">Dokumenty</a></li>
+          <li><a href="/zsnovebranice/admin/settings/">Nastavení</a></li>
+          <li>
+                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><button class="linklike" type="submit">Ukončit ukázku</button></form>
+                      </li>
+              </ul>
+    </nav>
+  </div>
+</header>
+<main id="obsah" tabindex="-1">
+  <div class="wrap narrow">
+    <h1>Úprava stránky: Školní družina</h1>
+    <form method="post" action="#" data-a="page-save" class="form">
+      <input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><input type="hidden" name="slug" value="skolni-druzina">
+      <div class="field"><label for="title">Nadpis stránky <span class="req">(povinné)</span></label><input id="title" name="title" type="text" value="Školní družina" required></div>      <div class="field">
+  <label for="body">Text stránky <span class="req">(povinné)</span></label>
+  <p class="hint" id="body-hint">Tabulku vytvoříte řádky se svislou čárou: | Sloupec A | Sloupec B | (první řádek je záhlaví, druhý řádek |---|---| ). Ostatní formátování zajistí tlačítka níže.</p>
+  <div class="toolbar" role="toolbar" aria-label="Formátování textu" aria-controls="body">
+    <button type="button" class="btn btn-secondary btn-small" data-md="bold"><strong>Tučně</strong></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="italic"><em>Kurzíva</em></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="h2">Nadpis</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ul">Odrážky</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ol">Číslovaný seznam</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="link">Odkaz</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="note">Zvýrazněný blok</button>
+  </div>
+  <textarea id="body" name="body" rows="14" required aria-describedby="body-hint">Provoz školní družiny ve školním roce 2026/2027 začíná **ve středu 2. září 2026**.
+
+- **Ranní družina:** 6:30 – 7:30
+- **Odpolední družina:** do 16:00
+- **Úplata:** 150 Kč za měsíc
+
+## Provozní doba
+| Den | Provoz |
+|---|---|
+| Pondělí | 11:40 – 16:00 |
+| Úterý | 11:40 – 16:00 |
+| Středa | 11:40 – 16:00 |
+| Čtvrtek | 12:35 – 16:00 |
+| Pátek | 11:40 – 16:00 |
+
+## Úplata
+Platba se provádí převodem na účet **27-9396310267/0100**.
+
+| Za období | Zaplatit do | Zpráva pro příjemce |
+|---|---|---|
+| září až prosinec 2026 | konce října 2026 | *jméno žáka_družina_9-12_2026* |
+| leden až červen 2027 | konce února 2027 | *jméno žáka_družina_1-6 2027* |
+
+## Co děti v družině dělají
+Cílem družiny je odreagování od běžných školních povinností. Děti si mohou podle vlastního zájmu vybírat z různých činností:
+- společenské hry a četba,
+- výtvarné hrátky a tvořivost,
+- divadelní chvilka,
+- společné procházky po vesnici,
+- pobyt na školní zahradě či v místní Sokolovně.
+
+## Naše pravidla
+1. **Neběhám**, abych si neublížil.
+2. **Nekřičím**, aby nás nebolela hlava.
+3. **Spory** řešíme slovem a přátelskou domluvou.
+4. **Neničím** kamarádovi úmyslně hru ani práci.
+5. **Nemluvím** vulgárně a hrubě.
+6. **Neberu si** nic, co mi nepatří.
+7. **Udržuji čistotu a pořádek**, uklízím po sobě věci a hračky.
+8. **Neopouštím** třídu ani školní zahradu bez dovolení.
+9. **Jsme kamarádi** a máme se rádi.
+10. **Používám kouzelná slůvka**: umím požádat, poděkovat, pozdravit, omluvit se a neskáču nikomu do řeči.</textarea>
+  <p><button type="button" class="btn btn-secondary btn-small" data-preview="body" data-preview-url="/admin/?a=preview" data-csrf="829e2d016375baae38c88233daed458d19142aea08aede81">Zobrazit náhled</button></p>
+  <div class="preview prose" id="body-preview" aria-live="polite" hidden></div>
+</div>
+      <p class="form-actions"><button class="btn btn-primary btn-big" type="submit">Uložit stránku</button> <a class="btn btn-secondary" href="/zsnovebranice/skolni-druzina">Zobrazit na webu</a> <a class="btn btn-secondary" href="/zsnovebranice/admin/pages/">Zrušit</a></p>
+    </form>
+  </div>
+</main>
+<script src="/zsnovebranice/zsnovebranice/assets/js/static-demo.js" defer></script>
+</body></html>

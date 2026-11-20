@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs" data-home="/zsnovebranice/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Úprava stránky – Správa webu</title>
+<link rel="icon" href="/zsnovebranice/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/zsnovebranice/assets/js/prefs.js"></script>
+<link rel="stylesheet" href="/zsnovebranice/assets/css/site.css">
+<link rel="stylesheet" href="/zsnovebranice/assets/css/admin.css">
+<script src="/zsnovebranice/assets/js/admin.js" defer></script>
+</head>
+<body class="admin">
+<a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+<div class="demo-bar" role="region" aria-label="Ukázkový režim">
+  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše zkusit bez hesla. Změny vidíte jen vy a na skutečný web se nic neuloží.</p>
+</div>
+<header class="admin-bar">
+  <div class="wrap admin-bar-inner">
+    <p class="admin-title"><strong>Správa webu</strong> · Jubilejní ZŠ a MŠ Nové Bránice</p>
+    <nav aria-label="Správa webu">
+      <ul class="admin-nav">
+        <li><a href="/zsnovebranice/">Zobrazit web</a></li>
+                  <li><a href="/zsnovebranice/admin/">Přehled</a></li>
+          <li><a href="/zsnovebranice/admin/news/">Aktuality</a></li>
+          <li><a href="/zsnovebranice/admin/pages/">Stránky</a></li>
+          <li><a href="/zsnovebranice/admin/docs/">Dokumenty</a></li>
+          <li><a href="/zsnovebranice/admin/settings/">Nastavení</a></li>
+          <li>
+                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><button class="linklike" type="submit">Ukončit ukázku</button></form>
+                      </li>
+              </ul>
+    </nav>
+  </div>
+</header>
+<main id="obsah" tabindex="-1">
+  <div class="wrap narrow">
+    <h1>Úprava stránky: Mateřská škola</h1>
+    <form method="post" action="#" data-a="page-save" class="form">
+      <input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><input type="hidden" name="slug" value="materska-skola">
+      <div class="field"><label for="title">Nadpis stránky <span class="req">(povinné)</span></label><input id="title" name="title" type="text" value="Mateřská škola" required></div>      <div class="field">
+  <label for="body">Text stránky <span class="req">(povinné)</span></label>
+  <p class="hint" id="body-hint">Tabulku vytvoříte řádky se svislou čárou: | Sloupec A | Sloupec B | (první řádek je záhlaví, druhý řádek |---|---| ). Ostatní formátování zajistí tlačítka níže.</p>
+  <div class="toolbar" role="toolbar" aria-label="Formátování textu" aria-controls="body">
+    <button type="button" class="btn btn-secondary btn-small" data-md="bold"><strong>Tučně</strong></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="italic"><em>Kurzíva</em></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="h2">Nadpis</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ul">Odrážky</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ol">Číslovaný seznam</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="link">Odkaz</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="note">Zvýrazněný blok</button>
+  </div>
+  <textarea id="body" name="body" rows="14" required aria-describedby="body-hint">Mateřská škola je součástí Jubilejní ZŠ Masarykovy a MŠ Nové Bránice, p. o. Ředitelka školy i mateřské školy: **Bc. Pavla Schořová**.
+
+## Pro rodiče dětí v MŠ
+- **Zápis do mateřské školy:** termíny a postup jsou na stránce [Zápis do školy](/zapis).
+- **Komunikace s rodiči** probíhá v systému [EduPage](/edupage): informace z MŠ, docházka a omluvenky, zprávy od učitelek, akce školky, jídelníček a kredit na stravu.
+- **Povinné předškolní vzdělávání:** nepřítomnost dítěte je nutné řádně omlouvat. Omluvenky posílejte z rodičovského účtu v EduPage, nikoli z účtu dítěte.
+
+## Stravování
+Obědy se připravují ve školní kuchyni a řídí se vyhláškou č. 107/2005 Sb., o školním stravování. Odhlášení obědů, platby a výše záloh jsou na stránce [Školní jídelna](/skolni-jidelna#jak-odhlasit-obed).
+
+## Dokumenty
+Školní vzdělávací program pro MŠ a další dokumenty najdete v [dokumentech školy](/dokumenty).</textarea>
+  <p><button type="button" class="btn btn-secondary btn-small" data-preview="body" data-preview-url="/admin/?a=preview" data-csrf="829e2d016375baae38c88233daed458d19142aea08aede81">Zobrazit náhled</button></p>
+  <div class="preview prose" id="body-preview" aria-live="polite" hidden></div>
+</div>
+      <p class="form-actions"><button class="btn btn-primary btn-big" type="submit">Uložit stránku</button> <a class="btn btn-secondary" href="/zsnovebranice/materska-skola">Zobrazit na webu</a> <a class="btn btn-secondary" href="/zsnovebranice/admin/pages/">Zrušit</a></p>
+    </form>
+  </div>
+</main>
+<script src="/zsnovebranice/zsnovebranice/assets/js/static-demo.js" defer></script>
+</body></html>

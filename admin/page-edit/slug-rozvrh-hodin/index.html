@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="cs" data-home="/zsnovebranice/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Úprava stránky – Správa webu</title>
+<link rel="icon" href="/zsnovebranice/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/zsnovebranice/assets/js/prefs.js"></script>
+<link rel="stylesheet" href="/zsnovebranice/assets/css/site.css">
+<link rel="stylesheet" href="/zsnovebranice/assets/css/admin.css">
+<script src="/zsnovebranice/assets/js/admin.js" defer></script>
+</head>
+<body class="admin">
+<a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+<div class="demo-bar" role="region" aria-label="Ukázkový režim">
+  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše zkusit bez hesla. Změny vidíte jen vy a na skutečný web se nic neuloží.</p>
+</div>
+<header class="admin-bar">
+  <div class="wrap admin-bar-inner">
+    <p class="admin-title"><strong>Správa webu</strong> · Jubilejní ZŠ a MŠ Nové Bránice</p>
+    <nav aria-label="Správa webu">
+      <ul class="admin-nav">
+        <li><a href="/zsnovebranice/">Zobrazit web</a></li>
+                  <li><a href="/zsnovebranice/admin/">Přehled</a></li>
+          <li><a href="/zsnovebranice/admin/news/">Aktuality</a></li>
+          <li><a href="/zsnovebranice/admin/pages/">Stránky</a></li>
+          <li><a href="/zsnovebranice/admin/docs/">Dokumenty</a></li>
+          <li><a href="/zsnovebranice/admin/settings/">Nastavení</a></li>
+          <li>
+                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><button class="linklike" type="submit">Ukončit ukázku</button></form>
+                      </li>
+              </ul>
+    </nav>
+  </div>
+</header>
+<main id="obsah" tabindex="-1">
+  <div class="wrap narrow">
+    <h1>Úprava stránky: Rozvrh hodin</h1>
+    <form method="post" action="#" data-a="page-save" class="form">
+      <input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><input type="hidden" name="slug" value="rozvrh-hodin">
+      <div class="field"><label for="title">Nadpis stránky <span class="req">(povinné)</span></label><input id="title" name="title" type="text" value="Rozvrh hodin" required></div>      <div class="field">
+  <label for="body">Text stránky <span class="req">(povinné)</span></label>
+  <p class="hint" id="body-hint">Tabulku vytvoříte řádky se svislou čárou: | Sloupec A | Sloupec B | (první řádek je záhlaví, druhý řádek |---|---| ). Ostatní formátování zajistí tlačítka níže.</p>
+  <div class="toolbar" role="toolbar" aria-label="Formátování textu" aria-controls="body">
+    <button type="button" class="btn btn-secondary btn-small" data-md="bold"><strong>Tučně</strong></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="italic"><em>Kurzíva</em></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="h2">Nadpis</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ul">Odrážky</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ol">Číslovaný seznam</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="link">Odkaz</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="note">Zvýrazněný blok</button>
+  </div>
+  <textarea id="body" name="body" rows="14" required aria-describedby="body-hint">Rozvrhy tříd platí od 21. 9. 2026. Střídají se po týdnech: **týden, kdy je plavání**, a **týden, kdy plavání není**. Termíny plavání jsou v [plánovaných akcích](/plan-akci).
+
+## Zvonění
+| Hodina | Čas |
+|---|---|
+| 1. hodina | 8.00–8.45 |
+| 2. hodina | 8.55–9.40 |
+| 3. hodina | 10.00–10.45 |
+| 4. hodina | 10.55–11.40 |
+| 5. hodina | 11.50–12.35 |
+
+V týdnu s plaváním začíná v úterý u 3. a 4. třídy 5. hodina až ve 12.15 a končí ve 13.00.
+
+## Rozvrhy tříd
+::: tabs
+@@ 1. třída
+**Týden bez plavání**
+
+| Den | 1. hodina | 2. hodina | 3. hodina | 4. hodina | 5. hodina |
+|---|---|---|---|---|---|
+| Pondělí | ČJ | M | AJ | PRV | – |
+| Úterý | ČJ | M | VV | PČ | – |
+| Středa | ČJ | M | ČJ | HV | – |
+| Čtvrtek | ČJ | ČJ | PRV | TV | TV |
+| Pátek | ČJ | M | M | ČJ | – |
+
+**Týden s plaváním**
+
+| Den | 1. hodina | 2. hodina | 3. hodina | 4. hodina | 5. hodina |
+|---|---|---|---|---|---|
+| Pondělí | ČJ | M | AJ | PRV | – |
+| Úterý | ČJ | M | plavání | plavání | – |
+| Středa | ČJ | M | ČJ | HV | – |
+| Čtvrtek | ČJ | ČJ | PRV | VV | PČ |
+| Pátek | ČJ | M | M | ČJ | – |
+
+@@ 2. třída
+**Týden bez plavání**
+
+| Den | 1. hodina | 2. hodina | 3. hodina | 4. hodina | 5. hodina |
+|---|---|---|---|---|---|
+| Pondělí | ČJ | M | PRV | AJ | – |
+| Úterý | ČJ | M | TV | TV | – |
+| Středa | ČJ | M | ČJ | PRV | HV |
+| Čtvrtek | M | M | ČJ | AJ | ČJ |
+| Pátek | ČJ | ČJ | VV | PČ | – |
+
+**Týden s plaváním**
+
+| Den | 1. hodina | 2. hodina | 3. hodina | 4. hodina | 5. hodina |
+|---|---|---|---|---|---|
+| Pondělí | ČJ | M | PRV | AJ | – |
+| Úterý | ČJ | M | plavání | plavání | – |
+| Středa | ČJ | M | ČJ | PRV | HV |
+| Čtvrtek | M | M | ČJ | AJ | ČJ |
+| Pátek | ČJ | ČJ | VV | PČ | – |
+
+@@ 3. třída
+**Týden bez plavání**
+
+| Den | 1. hodina | 2. hodina | 3. hodina | 4. hodina | 5. hodina |
+|---|---|---|---|---|---|
+| Pondělí | ČJ | M | PRV | AJ | – |
+| Úterý | ČJ | M | TV | TV | AJ |
+| Středa | ČJ | M | ČJ | PRV | HV |
+| Čtvrtek | M | M | ČJ | AJ | ČJ |
+| Pátek | ČJ | ČJ | VV | PČ | – |
+
+**Týden s plaváním**
+
+| Den | 1. hodina | 2. hodina | 3. hodina | 4. hodina | 5. hodina |
+|---|---|---|---|---|---|
+| Pondělí | ČJ | M | PRV | AJ | – |
+| Úterý | ČJ | M | plavání | plavání | AJ |
+| Středa | ČJ | M | ČJ | PRV | HV |
+| Čtvrtek | M | M | ČJ | AJ | ČJ |
+| Pátek | ČJ | ČJ | VV | PČ | – |
+
+@@ 4. třída
+**Týden bez plavání**
+
+| Den | 1. hodina | 2. hodina | 3. hodina | 4. hodina | 5. hodina |
+|---|---|---|---|---|---|
+| Pondělí | ČJ | M | AJ | VL | INF |
+| Úterý | ČJ | M | VV | PČ | AJ |
+| Středa | ČJ | M | AJ | HV | VL |
+| Čtvrtek | ČJ | ČJ | PŘ | TV | TV |
+| Pátek | ČJ | M | M | ČJ | PŘ |
+
+**Týden s plaváním**
+
+| Den | 1. hodina | 2. hodina | 3. hodina | 4. hodina | 5. hodina |
+|---|---|---|---|---|---|
+| Pondělí | ČJ | M | AJ | VL | INF |
+| Úterý | ČJ | M | plavání | plavání | AJ |
+| Středa | ČJ | M | AJ | HV | VL |
+| Čtvrtek | ČJ | ČJ | PŘ | VV | PČ |
+| Pátek | ČJ | M | M | ČJ | PŘ |
+
+:::
+
+## Zkratky předmětů
+ČJ – český jazyk, M – matematika, AJ – anglický jazyk, PRV – prvouka, VL – vlastivěda, PŘ – přírodověda, INF – informatika, VV – výtvarná výchova, PČ – pracovní činnosti, HV – hudební výchova, TV – tělesná výchova.</textarea>
+  <p><button type="button" class="btn btn-secondary btn-small" data-preview="body" data-preview-url="/admin/?a=preview" data-csrf="829e2d016375baae38c88233daed458d19142aea08aede81">Zobrazit náhled</button></p>
+  <div class="preview prose" id="body-preview" aria-live="polite" hidden></div>
+</div>
+      <p class="form-actions"><button class="btn btn-primary btn-big" type="submit">Uložit stránku</button> <a class="btn btn-secondary" href="/zsnovebranice/rozvrh-hodin">Zobrazit na webu</a> <a class="btn btn-secondary" href="/zsnovebranice/admin/pages/">Zrušit</a></p>
+    </form>
+  </div>
+</main>
+<script src="/zsnovebranice/zsnovebranice/assets/js/static-demo.js" defer></script>
+</body></html>

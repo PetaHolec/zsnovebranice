@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="cs" data-home="/zsnovebranice/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Úprava stránky – Správa webu</title>
+<link rel="icon" href="/zsnovebranice/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/zsnovebranice/assets/js/prefs.js"></script>
+<link rel="stylesheet" href="/zsnovebranice/assets/css/site.css">
+<link rel="stylesheet" href="/zsnovebranice/assets/css/admin.css">
+<script src="/zsnovebranice/assets/js/admin.js" defer></script>
+</head>
+<body class="admin">
+<a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+<div class="demo-bar" role="region" aria-label="Ukázkový režim">
+  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše zkusit bez hesla. Změny vidíte jen vy a na skutečný web se nic neuloží.</p>
+</div>
+<header class="admin-bar">
+  <div class="wrap admin-bar-inner">
+    <p class="admin-title"><strong>Správa webu</strong> · Jubilejní ZŠ a MŠ Nové Bránice</p>
+    <nav aria-label="Správa webu">
+      <ul class="admin-nav">
+        <li><a href="/zsnovebranice/">Zobrazit web</a></li>
+                  <li><a href="/zsnovebranice/admin/">Přehled</a></li>
+          <li><a href="/zsnovebranice/admin/news/">Aktuality</a></li>
+          <li><a href="/zsnovebranice/admin/pages/">Stránky</a></li>
+          <li><a href="/zsnovebranice/admin/docs/">Dokumenty</a></li>
+          <li><a href="/zsnovebranice/admin/settings/">Nastavení</a></li>
+          <li>
+                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><button class="linklike" type="submit">Ukončit ukázku</button></form>
+                      </li>
+              </ul>
+    </nav>
+  </div>
+</header>
+<main id="obsah" tabindex="-1">
+  <div class="wrap narrow">
+    <h1>Úprava stránky: Plánované akce</h1>
+    <form method="post" action="#" data-a="page-save" class="form">
+      <input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><input type="hidden" name="slug" value="plan-akci">
+      <div class="field"><label for="title">Nadpis stránky <span class="req">(povinné)</span></label><input id="title" name="title" type="text" value="Plánované akce" required></div>      <div class="field">
+  <label for="body">Text stránky <span class="req">(povinné)</span></label>
+  <p class="hint" id="body-hint">Tabulku vytvoříte řádky se svislou čárou: | Sloupec A | Sloupec B | (první řádek je záhlaví, druhý řádek |---|---| ). Ostatní formátování zajistí tlačítka níže.</p>
+  <div class="toolbar" role="toolbar" aria-label="Formátování textu" aria-controls="body">
+    <button type="button" class="btn btn-secondary btn-small" data-md="bold"><strong>Tučně</strong></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="italic"><em>Kurzíva</em></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="h2">Nadpis</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ul">Odrážky</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ol">Číslovaný seznam</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="link">Odkaz</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="note">Zvýrazněný blok</button>
+  </div>
+  <textarea id="body" name="body" rows="14" required aria-describedby="body-hint">Přehled plánovaných akcí se během školního roku průběžně doplňuje a aktualizuje.
+
+## Školní rok 2026/2027
+### Září
+| Datum | Akce |
+|---|---|
+| 1. 9. 2026 | Zahájení školního roku |
+| 18. 9. 2026 | EVVO – Světový den úklidu |
+| 23. 9. 2026 | Mobilní planetárium – Tajemství přírody – Stromy |
+| 28. 9. 2026 | Státní svátek (pondělí) |
+| 29. 9. 2026 | Plavání |
+
+### Říjen
+| Datum | Akce |
+|---|---|
+| 12. 10. 2026 | Canisterapie |
+| 13. 10. 2026 | Plavání |
+| 16. 10. 2026 | EVVO – Světový den výživy – projektové vyučování |
+| 19. 10. 2026 | Dopravní hřiště Oslavany – 3. a 4. ročník |
+| 27. 10. 2026 | Plavání |
+| 28.–30. 10. 2026 | Podzimní prázdniny |
+
+### Listopad
+| Datum | Akce |
+|---|---|
+| 10. 11. 2026 | Plavání |
+| 12. 11. 2026 | Divadelní představení – Pohádka: Příhody včelích medvídků – zrušeno z důvodu vysoké absence |
+| 16. 11. 2026 | Ředitelské volno |
+| 17. 11. 2026 | Státní svátek |
+| 18. 11. 2026 | Ředitelské volno – přerušení dodávky v obci |
+| 23. 11. 2026 | Včelař – výukový program |
+| 27. 11. 2026 | Plavání |
+
+### Prosinec
+| Datum | Akce |
+|---|---|
+| 1. 12. 2026 | Plavání |
+| 4. 12. 2026 | Mikuláš ve škole |
+| 15. 12. 2026 | Plavání |
+| 16. 12. 2026 | Mobilní planetárium – Betlémská hvězda |
+| 16. 12. 2026 | Vánoční besídka pro rodiče v 17.00 |
+
+### Leden
+| Datum | Akce |
+|---|---|
+| 5. 1. 2027 | Plavání |
+| 19. 1. 2027 | Plavání |
+
+### Březen
+| Datum | Akce |
+|---|---|
+| 17. 3. 2027 | Mobilní planetárium – Den vody |
+| 22. 3. 2027 | EVVO – Světový den vody |
+| 24. 3. 2027 | Pomlázka po škole |
+| 25.–29. 3. 2027 | Velikonoční prázdniny |
+
+### Duben
+| Datum | Akce |
+|---|---|
+| 1. 4. 2027 | EVVO – Mezinárodní den ptactva |
+| 2. 4. 2027 | Modrý běh – sportovní akce |
+| 22. 4. 2027 | EVVO – Den země – projektový den |
+| 30. 4. 2027 | Uklidme Česko, Čarodějnice ve škole |
+
+### Květen
+| Datum | Akce |
+|---|---|
+| 5. 5. 2027 | Mobilní planetárium – tvůrčí dílny |
+
+### Červen
+| Datum | Akce |
+|---|---|
+| 8. 6. 2027 | EVVO – Světový den oceánů |
+
+## Z minulých let
+::: details Školní rok 2024/2025
+| Datum | Akce |
+|---|---|
+| 9. 9. 2024 | Hudební pořad „Z pohádky do pohádky“, pohádkové písně s pestrou škálou hudebních nástrojů |
+| 12. 9. 2024 | Zahájení plaveckého výcviku v Blučině |
+| 9. 10. 2024 | Dopravní hřiště Oslavany, žáci 3. a 4. ročníku |
+| 16. 10. 2024 | Vánoční focení |
+| listopad 2024 | Zkus to zdravě – pořad o správném stravování, výběru potravin a orientaci v potravinových doplňcích, informace o rizikovém chování mládeže a upozornění na nebezpečí diet a poruch příjmu potravy |
+| prosinec 2024 | Slyšte, slyšte aneb co se stalo v Betlémě – vánoční (adventní) příběh, děti hrají Josefa, Marii, tři krále a tři pastýře, koledy doprovází harmonika, ukulele a dudy |
+| březen 2025 | Kouzelník Pet – kouzla a iluze hrou |
+| duben 2025 | Dopravní hřiště Oslavany, žáci 3. a 4. ročníku |
+| 23. 5. 2025 | Čmeláci – pořad navazuje na loňský pořad Včely |
+:::
+
+::: details Školní rok 2023/2024
+| Datum | Akce |
+|---|---|
+| 12. 9. 2023 | Hudební program (ZŠ + předškoláci) |
+| 14. 9.–5. 12. 2023 | Plavecký výcvik Blučina (společně se ZŠ Pravlov, 1.–4. ročník) |
+| 6. 10. 2023 | Beseda se spisovatelem Janem Opatřilem |
+| 13. 10. 2023 | Dopravní výchova Oslavany (3. a 4. ročník) |
+| 18. 10. 2023 | Divadelní představení v Dolních Kounicích |
+| 23. 10. 2023 | Loutkové divadlo (jen 1. a 2. ročník) |
+| 1. 11. 2023 | Dušičky, dýně a draci (připomínka památky zesnulých) |
+| 7. 11. 2023 | Návštěva ZŠ Dolní Kounice (4. ročník) |
+| 3. 12. 2023 | Rozsvícení vánočního stromu |
+| 8. 12. 2023 | Beseda se včelařem |
+| 13. 12. 2023 | Peče celá škola |
+| 1. 2. 2024 | Slavnostní den ve škole |
+| 13. 2. 2024 | S mobilem v pohodě (preventivní program 1.–2. ročník), Internetem bezpečně (preventivní program 3.–4. ročník) |
+| 14. 2. 2024 | Bruslení |
+| 23. 2. 2024 | Kouzelník |
+| 7. a 8. 3. 2024 | Zdraví dětem |
+| 4. 4. 2024 | 3D jaro |
+| 10. 4. 2024 | Zápis do 1. ročníku |
+| 17. 4. 2024 | Třídní schůzky |
+| 19. 4. 2024 | Dopravní výchova |
+| 22. 4. 2024 | Den Země |
+| 9. 5. 2024 | Exkurze ŠZP Žabčice |
+| 12. 6. 2024 | Muzikálové potěšení – MŠ + ZŠ |
+:::
+</textarea>
+  <p><button type="button" class="btn btn-secondary btn-small" data-preview="body" data-preview-url="/admin/?a=preview" data-csrf="829e2d016375baae38c88233daed458d19142aea08aede81">Zobrazit náhled</button></p>
+  <div class="preview prose" id="body-preview" aria-live="polite" hidden></div>
+</div>
+      <p class="form-actions"><button class="btn btn-primary btn-big" type="submit">Uložit stránku</button> <a class="btn btn-secondary" href="/zsnovebranice/plan-akci">Zobrazit na webu</a> <a class="btn btn-secondary" href="/zsnovebranice/admin/pages/">Zrušit</a></p>
+    </form>
+  </div>
+</main>
+<script src="/zsnovebranice/zsnovebranice/assets/js/static-demo.js" defer></script>
+</body></html>

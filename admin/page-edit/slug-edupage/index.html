@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="cs" data-home="/zsnovebranice/">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Úprava stránky – Správa webu</title>
+<link rel="icon" href="/zsnovebranice/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/zsnovebranice/assets/js/prefs.js"></script>
+<link rel="stylesheet" href="/zsnovebranice/assets/css/site.css">
+<link rel="stylesheet" href="/zsnovebranice/assets/css/admin.css">
+<script src="/zsnovebranice/assets/js/admin.js" defer></script>
+</head>
+<body class="admin">
+<a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+<div class="demo-bar" role="region" aria-label="Ukázkový režim">
+  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše zkusit bez hesla. Změny vidíte jen vy a na skutečný web se nic neuloží.</p>
+</div>
+<header class="admin-bar">
+  <div class="wrap admin-bar-inner">
+    <p class="admin-title"><strong>Správa webu</strong> · Jubilejní ZŠ a MŠ Nové Bránice</p>
+    <nav aria-label="Správa webu">
+      <ul class="admin-nav">
+        <li><a href="/zsnovebranice/">Zobrazit web</a></li>
+                  <li><a href="/zsnovebranice/admin/">Přehled</a></li>
+          <li><a href="/zsnovebranice/admin/news/">Aktuality</a></li>
+          <li><a href="/zsnovebranice/admin/pages/">Stránky</a></li>
+          <li><a href="/zsnovebranice/admin/docs/">Dokumenty</a></li>
+          <li><a href="/zsnovebranice/admin/settings/">Nastavení</a></li>
+          <li>
+                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><button class="linklike" type="submit">Ukončit ukázku</button></form>
+                      </li>
+              </ul>
+    </nav>
+  </div>
+</header>
+<main id="obsah" tabindex="-1">
+  <div class="wrap narrow">
+    <h1>Úprava stránky: EduPage pro rodiče</h1>
+    <form method="post" action="#" data-a="page-save" class="form">
+      <input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><input type="hidden" name="slug" value="edupage">
+      <div class="field"><label for="title">Nadpis stránky <span class="req">(povinné)</span></label><input id="title" name="title" type="text" value="EduPage pro rodiče" required></div>      <div class="field">
+  <label for="body">Text stránky <span class="req">(povinné)</span></label>
+  <p class="hint" id="body-hint">Tabulku vytvoříte řádky se svislou čárou: | Sloupec A | Sloupec B | (první řádek je záhlaví, druhý řádek |---|---| ). Ostatní formátování zajistí tlačítka níže.</p>
+  <div class="toolbar" role="toolbar" aria-label="Formátování textu" aria-controls="body">
+    <button type="button" class="btn btn-secondary btn-small" data-md="bold"><strong>Tučně</strong></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="italic"><em>Kurzíva</em></button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="h2">Nadpis</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ul">Odrážky</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="ol">Číslovaný seznam</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="link">Odkaz</button>
+    <button type="button" class="btn btn-secondary btn-small" data-md="note">Zvýrazněný blok</button>
+  </div>
+  <textarea id="body" name="body" rows="14" required aria-describedby="body-hint">Od školního roku 2026/2027 používáme pro každodenní komunikaci mezi školou, mateřskou školou a rodinou systém **EduPage**. Webová stránka školy zůstává zachována.
+
+&gt; **Důležité:** zkontrolujte, že máte v EduPage zvolen školní rok 2026/2027. Přihlašovacím jménem je e-mailová adresa zadaná škole. Pomoc s nastavením: viz [Pomoc s nastavením](#7-pomoc-s-nastavenim).
+
+## 1. Mobilní aplikace a přihlášení
+- Do telefonu si stáhněte aplikaci „EduPage“ z Google Play (Android) nebo App Store (iPhone/iPad).
+- Přihlašujte se rodičovským účtem. Přihlašovacím jménem rodiče je e-mailová adresa zadaná škole.
+- Pokud heslo zapomenete, na přihlašovací obrazovce využijte obnovu přístupu („Nevím přihlašovací jméno nebo heslo“).
+- Máte-li ve škole více dětí, můžete je spravovat v jednom rodičovském účtu a mezi dětmi se v aplikaci přepínat.
+
+## 2. Co najdete v EduPage – základní škola
+- **Rozvrh** – aktuální rozvrh dítěte a případné změny.
+- **Omluvenky a docházka** – elektronické zasílání omluvenek a přehled absence.
+- **Známky a hodnocení** – průběžné hodnocení a další informace.
+- **Úkoly a zadání** – domácí úkoly, písemné práce a další zadání od učitele.
+- **Zprávy a oznámení** – důležité informace od školy a učitelů.
+- **Akce školy** – školní akce, výlety, projekty a změny programu.
+- **Fotografie** – z akcí školy, pokud budou v EduPage zveřejněny.
+- **Jídelna** – jídelníček, informace o stravování a odhlašování stravy.
+- **Platby / kredit** – přehled plateb a kredit na stravu.
+
+## 3. Co najdete v EduPage – mateřská škola
+- **Informace z MŠ a třídní knihy** – informace o provozu a vzdělávání dětí.
+- **Docházka a omluvenky** – viz Omluvenky níže.
+- **Zprávy a oznámení** od učitelek a vedení školy.
+- **Akce MŠ** – výlety, kulturní programy a společné akce.
+- **Fotografie** ze života mateřské školy, pokud budou zveřejněny.
+- **Jídelna** a **kredit na stravu**.
+
+## 4. Stravování – důležité upozornění
+Nepřítomnost dítěte sama o sobě neznamená automatické odhlášení stravy. Pokud dítě nebude ve škole nebo v mateřské škole, nezapomeňte stravu včas odhlásit podle pravidel [školní jídelny](/skolni-jidelna). V EduPage sledujte také jídelníček a stav kreditu.
+
+## 5. Omluvenky
+- **ZŠ:** rodiče mohou z rodičovského účtu zasílat elektronické omluvenky; třídní učitel je následně přijme nebo zamítne.
+- **MŠ – povinné předškolní vzdělávání:** nepřítomnost je nutné řádně omlouvat. K elektronické omluvence používejte rodičovský účet, nikoli účet dítěte.
+
+## 6. Doporučujeme rodičům
+- povolit aplikaci EduPage oznámení, aby vám neunikla důležitá zpráva,
+- pravidelně kontrolovat zprávy, akce, úkoly, známky a docházku,
+- při nepřítomnosti dítěte kromě omluvenky včas řešit i stravu,
+- zkontrolovat školní rok 2026/2027, zejména při prvním přihlášení,
+- při změně e-mailové adresy oznámit změnu škole, protože e-mail je zároveň přihlašovacím jménem.
+
+## 7. Pomoc s nastavením
+Pokud budete mít problém s instalací aplikace, přihlášením, přepnutím školního roku nebo používáním EduPage, obraťte se na nás. Rádi vám s prvním nastavením pomůžeme: [info@zsnovebranice.cz](mailto:info@zsnovebranice.cz), tel. [720 033 479](tel:+420720033479).</textarea>
+  <p><button type="button" class="btn btn-secondary btn-small" data-preview="body" data-preview-url="/admin/?a=preview" data-csrf="829e2d016375baae38c88233daed458d19142aea08aede81">Zobrazit náhled</button></p>
+  <div class="preview prose" id="body-preview" aria-live="polite" hidden></div>
+</div>
+      <p class="form-actions"><button class="btn btn-primary btn-big" type="submit">Uložit stránku</button> <a class="btn btn-secondary" href="/zsnovebranice/edupage">Zobrazit na webu</a> <a class="btn btn-secondary" href="/zsnovebranice/admin/pages/">Zrušit</a></p>
+    </form>
+  </div>
+</main>
+<script src="/zsnovebranice/zsnovebranice/assets/js/static-demo.js" defer></script>
+</body></html>
