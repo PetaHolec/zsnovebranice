@@ -1,0 +1,5 @@
+.utility, .main-nav, .menu-toggle, .skip-link, .hero-actions, .site-footer, .pager, .filters { display: none !important; }
+body { font-size: 12pt; color: #000; background: #fff; }
+a { color: #000; }
+main a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; }
+.card, .tile { box-shadow: none; }
