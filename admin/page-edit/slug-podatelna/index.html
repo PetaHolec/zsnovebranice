@@ -14,7 +14,7 @@
 <body class="admin">
 <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 <div class="demo-bar" role="region" aria-label="Ukázkový režim">
-  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše zkusit bez hesla. Změny vidíte jen vy a na skutečný web se nic neuloží.</p>
+  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše proklikat bez hesla. Je to jen ukázka: nic se neuloží a web se nezmění.</p>
 </div>
 <header class="admin-bar">
   <div class="wrap admin-bar-inner">
@@ -28,7 +28,7 @@
           <li><a href="/zsnovebranice/admin/docs/">Dokumenty</a></li>
           <li><a href="/zsnovebranice/admin/settings/">Nastavení</a></li>
           <li>
-                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><button class="linklike" type="submit">Ukončit ukázku</button></form>
+                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="e465855ddcd89ed56ebac3bebff17d9d5a44173fe702b63e"><button class="linklike" type="submit">Ukončit ukázku</button></form>
                       </li>
               </ul>
     </nav>
@@ -38,7 +38,7 @@
   <div class="wrap narrow">
     <h1>Úprava stránky: Podatelna</h1>
     <form method="post" action="#" data-a="page-save" class="form">
-      <input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><input type="hidden" name="slug" value="podatelna">
+      <input type="hidden" name="_csrf" value="e465855ddcd89ed56ebac3bebff17d9d5a44173fe702b63e"><input type="hidden" name="slug" value="podatelna">
       <div class="field"><label for="title">Nadpis stránky <span class="req">(povinné)</span></label><input id="title" name="title" type="text" value="Podatelna" required></div>      <div class="field">
   <label for="body">Text stránky <span class="req">(povinné)</span></label>
   <p class="hint" id="body-hint">Tabulku vytvoříte řádky se svislou čárou: | Sloupec A | Sloupec B | (první řádek je záhlaví, druhý řádek |---|---| ). Ostatní formátování zajistí tlačítka níže.</p>
@@ -89,12 +89,12 @@ Dokumenty zasílejte v běžně používaných formátech: PDF, DOC/DOCX, XLS/XL
 
 ## Příjem elektronických podání
 Po přijetí podání může škola zkontrolovat čitelnost a úplnost, datový formát příloh, přítomnost elektronického podpisu (je-li vyžadován), přítomnost škodlivého kódu a možnost bezpečného otevření příloh. Zprávy vyhodnocené jako nevyžádaná pošta nebo obsahující škodlivý kód mohou být z bezpečnostních důvodů vyřazeny.</textarea>
-  <p><button type="button" class="btn btn-secondary btn-small" data-preview="body" data-preview-url="/admin/?a=preview" data-csrf="829e2d016375baae38c88233daed458d19142aea08aede81">Zobrazit náhled</button></p>
+  <p><button type="button" class="btn btn-secondary btn-small" data-preview="body" data-preview-url="/admin/?a=preview" data-csrf="e465855ddcd89ed56ebac3bebff17d9d5a44173fe702b63e">Zobrazit náhled</button></p>
   <div class="preview prose" id="body-preview" aria-live="polite" hidden></div>
 </div>
       <p class="form-actions"><button class="btn btn-primary btn-big" type="submit">Uložit stránku</button> <a class="btn btn-secondary" href="/zsnovebranice/podatelna">Zobrazit na webu</a> <a class="btn btn-secondary" href="/zsnovebranice/admin/pages/">Zrušit</a></p>
     </form>
   </div>
 </main>
-<script src="/zsnovebranice/zsnovebranice/assets/js/static-demo.js" defer></script>
+<script src="/zsnovebranice/assets/js/static-demo.js" defer></script>
 </body></html>

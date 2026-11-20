@@ -14,7 +14,7 @@
 <body class="admin">
 <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 <div class="demo-bar" role="region" aria-label="Ukázkový režim">
-  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše zkusit bez hesla. Změny vidíte jen vy a na skutečný web se nic neuloží.</p>
+  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše proklikat bez hesla. Je to jen ukázka: nic se neuloží a web se nezmění.</p>
 </div>
 <header class="admin-bar">
   <div class="wrap admin-bar-inner">
@@ -28,7 +28,7 @@
           <li><a href="/zsnovebranice/admin/docs/">Dokumenty</a></li>
           <li><a href="/zsnovebranice/admin/settings/">Nastavení</a></li>
           <li>
-                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><button class="linklike" type="submit">Ukončit ukázku</button></form>
+                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="e465855ddcd89ed56ebac3bebff17d9d5a44173fe702b63e"><button class="linklike" type="submit">Ukončit ukázku</button></form>
                       </li>
               </ul>
     </nav>
@@ -40,7 +40,7 @@
     <section aria-labelledby="h-add">
       <h2 id="h-add">Nahrát nový dokument</h2>
       <form method="post" action="#" data-a="doc-add" enctype="multipart/form-data" class="form">
-        <input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81">        <div class="field"><label for="title">Název dokumentu <span class="req">(povinné)</span></label><p class="hint" id="title-hint">Např. „Výroční zpráva o činnosti školy 2025/2026“.</p><input id="title" name="title" type="text" value="" required aria-describedby="title-hint"></div>        <div class="field"><label for="group">Skupina</label>
+        <input type="hidden" name="_csrf" value="e465855ddcd89ed56ebac3bebff17d9d5a44173fe702b63e">        <div class="field"><label for="title">Název dokumentu <span class="req">(povinné)</span></label><p class="hint" id="title-hint">Např. „Výroční zpráva o činnosti školy 2025/2026“.</p><input id="title" name="title" type="text" value="" required aria-describedby="title-hint"></div>        <div class="field"><label for="group">Skupina</label>
           <select id="group" name="group"><option>Základní dokumenty školy</option><option>Výroční zprávy</option><option>Formuláře</option><option>Školská rada</option><option>GDPR</option><option>Ostatní</option></select></div>
         <div class="field"><label for="file">Soubor <span class="req">(povinné)</span></label><p class="hint" id="file-hint">Nejlépe PDF (do 15 MB). Preferujte PDF vytvořené z textu, nikoli sken, aby je mohli číst i nevidomí.</p><input id="file" type="file" name="file" required aria-describedby="file-hint"></div>
         <p><button class="btn btn-primary" type="submit">Nahrát dokument</button></p>
@@ -67,5 +67,5 @@
           </section>
   </div>
 </main>
-<script src="/zsnovebranice/zsnovebranice/assets/js/static-demo.js" defer></script>
+<script src="/zsnovebranice/assets/js/static-demo.js" defer></script>
 </body></html>

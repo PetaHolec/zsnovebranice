@@ -14,7 +14,7 @@
 <body class="admin">
 <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
 <div class="demo-bar" role="region" aria-label="Ukázkový režim">
-  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše zkusit bez hesla. Změny vidíte jen vy a na skutečný web se nic neuloží.</p>
+  <p class="wrap"><strong>Ukázka správy webu.</strong> Můžete si vše proklikat bez hesla. Je to jen ukázka: nic se neuloží a web se nezmění.</p>
 </div>
 <header class="admin-bar">
   <div class="wrap admin-bar-inner">
@@ -28,7 +28,7 @@
           <li><a href="/zsnovebranice/admin/docs/">Dokumenty</a></li>
           <li><a href="/zsnovebranice/admin/settings/">Nastavení</a></li>
           <li>
-                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81"><button class="linklike" type="submit">Ukončit ukázku</button></form>
+                          <form method="post" action="#" data-a="demo-end"><input type="hidden" name="_csrf" value="e465855ddcd89ed56ebac3bebff17d9d5a44173fe702b63e"><button class="linklike" type="submit">Ukončit ukázku</button></form>
                       </li>
               </ul>
     </nav>
@@ -38,7 +38,7 @@
   <div class="wrap narrow">
     <h1>Úprava aktuality</h1>
     <form method="post" action="#" data-a="news-save" enctype="multipart/form-data" class="form">
-      <input type="hidden" name="_csrf" value="829e2d016375baae38c88233daed458d19142aea08aede81">      <input type="hidden" name="id" value="n1">
+      <input type="hidden" name="_csrf" value="e465855ddcd89ed56ebac3bebff17d9d5a44173fe702b63e">      <input type="hidden" name="id" value="n1">
       <div class="field"><label for="title">Nadpis <span class="req">(povinné)</span></label><p class="hint" id="title-hint">Stručně a výstižně, např. „Ředitelské volno 16. listopadu“.</p><input id="title" name="title" type="text" value="Důležité: škola a MŠ zavřeny 16.–18. listopadu" required aria-describedby="title-hint"></div>      <div class="field"><label for="date">Datum zveřejnění <span class="req">(povinné)</span></label><input id="date" name="date" type="date" value="2026-11-12" required></div>      <div class="field">
         <label for="category">Kategorie</label>
         <select id="category" name="category">
@@ -65,7 +65,7 @@
 Běžný provoz školy i mateřské školy bude obnoven **ve čtvrtek 19. 11. 2026**. Prosíme vás, abyste s touto skutečností počítali a včas si zajistili péči o své děti. Děkujeme za pochopení.
 
 Vedení školy a mateřské školy</textarea>
-  <p><button type="button" class="btn btn-secondary btn-small" data-preview="body" data-preview-url="/admin/?a=preview" data-csrf="829e2d016375baae38c88233daed458d19142aea08aede81">Zobrazit náhled</button></p>
+  <p><button type="button" class="btn btn-secondary btn-small" data-preview="body" data-preview-url="/admin/?a=preview" data-csrf="e465855ddcd89ed56ebac3bebff17d9d5a44173fe702b63e">Zobrazit náhled</button></p>
   <div class="preview prose" id="body-preview" aria-live="polite" hidden></div>
 </div>
 
@@ -93,5 +93,5 @@ Vedení školy a mateřské školy</textarea>
     </form>
   </div>
 </main>
-<script src="/zsnovebranice/zsnovebranice/assets/js/static-demo.js" defer></script>
+<script src="/zsnovebranice/assets/js/static-demo.js" defer></script>
 </body></html>
